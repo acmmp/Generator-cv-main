@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CVForm from '../components/CVForm';
+---
+
+<Layout title="Generador de CV">
+  <main>
+    <h1>Generador de CV</h1>
+    <p>Crea tu CV en línea y compártelo fácilmente con empleadores.</p>
+    <CVForm client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+</style>
